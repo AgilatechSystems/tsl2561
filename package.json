@@ -1,0 +1,21 @@
+{
+  "name": "@agilatech/tsl2561",
+  "version": "0.8.0",
+  "description": "Driver for the TSL2561 Sensor",
+  "main": "./build/Release/tsl2561",
+  "gypfile": true,
+  "scripts": {
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Agilatech/tsl2561.git"
+  },
+  "keywords": [
+    "Sensor",
+    "TSL2561",
+    "light"
+  ],
+  "author": "Scott Erholm <scott@agilatech.com>",
+  "license": "MIT"
+}
