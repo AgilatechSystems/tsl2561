@@ -23,8 +23,14 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/ioctl.h>
-#include <linux/i2c.h>
 #include <linux/i2c-dev.h>
+
+// linux/i2c-dev.h provided by i2c-tools contains the symbols defined in linux/i2c.h
+// This is not the norm, but some distros like OpenSuSe do it that way.
+// For everyone else, we will include linux/i2c.h if a well-known symbol is not defined.
+#ifndef I2C_FUNC_I2C
+#include <linux/i2c.h>
+#endif
 
 #define HEX(x) std::setw(2) << std::setfill('0') << std::hex << (int)(x)
 
