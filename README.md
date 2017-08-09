@@ -18,8 +18,8 @@ node-gyp configure build
 ```
 const addon = require('@agilatech/tsl2561');
 
-// create an instance on the /dev/ttyO2 serial device file
-const tsl2561 = new addon.Tsl2561('/dev/ttyO2');
+// create an instance on the /dev/i2c-1 I2C file at address 0x39
+const tsl2561 = new addon.Tsl2561('/dev/i2c-1', 0x39);
 ```
 #####Get basic device info
 ```

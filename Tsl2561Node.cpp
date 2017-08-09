@@ -158,7 +158,7 @@ namespace tsl2561 {
         String::Utf8Value param0(args[0]->ToString());
         std::string devfile = std::string(*param0);
         
-        uint32_t addr = args[1]->IsUndefined() ? 0x40 : args[1]->NumberValue();
+        uint32_t addr = args[1]->IsUndefined() ? 0x39 : args[1]->NumberValue();
         
         // if invoked as costructor: 'new Tsl2561(...)'
         if (args.IsConstructCall()) {
