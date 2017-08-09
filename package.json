@@ -1,6 +1,6 @@
 {
   "name": "@agilatech/tsl2561",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "Driver for the TSL2561 Sensor",
   "main": "./build/Release/tsl2561",
   "gypfile": true,
